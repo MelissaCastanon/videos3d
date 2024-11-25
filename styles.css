@@ -1,0 +1,45 @@
+.video-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.video-card:hover {
+    transform: scale(1.02);
+}
+
+video {
+    width: 100%; /* El video se ajusta al ancho del div */
+    height: 200px; /* Fija la altura del contenedor */
+    object-fit: contain; /* Asegura que el video se muestre completo sin recortarse */
+    border-radius: 5px; /* Opcional: esquinas redondeadas */
+}
+
+.stereoscopic-videos {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espaciado entre videos */
+}
+
+.stereoscopic-videos video {
+    width: 48%; /* Cada video ocupa el 48% del ancho disponible dentro del div */
+    height: 200px; /* Fija la misma altura que los videos individuales */
+    object-fit: contain; /* Garantiza que se vean completos */
+}
+
+.caption {
+    padding: 10px;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
